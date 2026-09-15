@@ -1,0 +1,161 @@
+{
+  "info": {
+    "name": "Notes API",
+    "description": null,
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3000/health",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "health"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "GET All Notes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3000/notes",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "notes"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "GET 1 Note",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3000/notes/1",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "notes",
+            "1"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "POST Note",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3000/notes",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "notes"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Shopping list\",\n  \"content\": \"Milk, bread, eggs\",\n  \"tag\": \"personal\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PUT Note",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3000/notes/1",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "notes",
+            "1"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated shopping list\",\n  \"content\": \"Milk, bread, eggs, butter\",\n  \"tag\": \"personal\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DELETE Note",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3000/notes/1",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "notes",
+            "1"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    }
+  ],
+  "variable": []
+}
