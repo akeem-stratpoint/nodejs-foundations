@@ -6,7 +6,7 @@ function wait(ms) {
 
 wait(500).then(message => console.log('.then():', message));
 
-sync function withAwait() {
+async function withAwait() {
   const message = await wait(500);
   console.log('await:', message);
 }
